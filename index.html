@@ -3,27 +3,38 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Inferonomics — AI Economics Advisory Lab</title>
-  <meta name="description" content="Inferonomics is an AI economics advisory lab focused on unit economics, margin resilience, and economic guardrails for AI features." />
+  <title>Inferonomics — AI Economics Research Lab</title>
+  <meta name="description" content="Inferonomics is an AI economics research lab focused on unit economics, margin resilience, and economic guardrails for AI features." />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <main class="wrap">
+
     <header class="hero">
       <div class="badge">Inferonomics</div>
-      <h1>AI Economics Advisory Lab</h1>
+      <h1>AI Economics Research Lab</h1>
+
       <p class="sub">
-        A practical framework and modeling lab to evaluate <strong>unit economics</strong>, <strong>margin resilience</strong>,
+        A practical framework and modeling lab to evaluate 
+        <strong>unit economics</strong>, 
+        <strong>margin resilience</strong>,
         and <strong>cost drivers</strong> of AI features before they ship.
       </p>
 
       <div class="cta">
-        <a class="btn" href="mailto:afshar.sanam@gmail.com?subject=Inferonomics%20—%20Executive%20Brief%20Request">Request an Executive Brief</a>
-        <a class="btn secondary" href="#what">What is Inferonomics?</a>
+        <a class="btn" href="mailto:afshar.sanam@gmail.com?subject=Inferonomics%20—%20Research%20Inquiry">
+          Discuss research or collaboration
+        </a>
+        <a class="btn secondary" href="#what">
+          What is Inferonomics?
+        </a>
       </div>
 
       <p class="disclaimer">
-        Built independently as personal research. No confidential or employer data is used.
+        Built independently as personal research and experimentation.
+        Developed outside professional responsibilities. 
+        No confidential or employer data is used.
       </p>
     </header>
 
@@ -39,26 +50,55 @@
 
     <section class="grid">
       <div class="card">
-        <h3>Executive Brief (1-page)</h3>
+        <h3>Research Summary (1-page)</h3>
         <p>
-          A concise summary of risk level, break-even targets, dominant cost drivers, and recommended actions—
-          suitable for CTO/CFO alignment.
+          A concise research summary outlining economic risk levels, 
+          break-even thresholds, and architectural tradeoffs in AI systems.
         </p>
       </div>
 
       <div class="card">
         <h3>Unit Economics Modeling</h3>
         <p>
-          Scenario-based modeling for MAU growth, requests/user, token budgets, caching, and pricing assumptions.
+          Scenario-based modeling for MAU growth, requests per user, 
+          token budgets, caching strategies, and pricing assumptions.
         </p>
       </div>
 
       <div class="card">
         <h3>Optimization Levers</h3>
         <p>
-          Practical levers such as retrieval depth, history compression, input/output caps, and caching strategy.
+          Practical levers such as retrieval depth, history compression, 
+          input/output caps, and caching strategy.
         </p>
       </div>
+    </section>
+
+    <section class="card" style="margin-top: 18px;">
+      <h2>About Inferonomics</h2>
+      <p>
+        Inferonomics is an independent AI Economics Research Lab exploring how 
+        architectural decisions influence the long-term economic viability 
+        of AI systems.
+      </p>
+      <p>
+        The research focuses on unit economics, margin resilience, token efficiency,
+        and cost-aware design principles that help organizations understand the
+        structural sustainability of AI features.
+      </p>
+    </section>
+
+    <section class="card" style="margin-top: 18px;">
+      <h2>About the Founder</h2>
+      <p>
+        Inferonomics was founded by <strong>Afshar Sanam</strong>, a senior engineering leader 
+        building distributed systems and enterprise platforms. Her work centers on the
+        intersection of AI systems, architectural decision-making, and economic design.
+      </p>
+      <p>
+        This initiative is developed independently, outside professional responsibilities,
+        and does not use confidential information from any employer.
+      </p>
     </section>
 
     <footer class="footer">
@@ -67,13 +107,17 @@
         <span class="muted">— AI economics, margin as a first-class architectural constraint.</span>
       </div>
       <div class="muted">
-        © <span id="y"></span> • <a href="mailto:afshar.sanam@gmail.com">Contact</a>
+        © <span id="y"></span> • 
+        <span class="muted">Inferonomics Research Lab. Independent initiative.</span> • 
+        <a href="mailto:afshar.sanam@gmail.com">Contact</a>
       </div>
     </footer>
+
   </main>
 
   <script>
     document.getElementById("y").textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>
