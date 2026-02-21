@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Inferonomics — AI Economics Advisory Lab</title>
+  <meta name="description" content="Inferonomics is an AI economics advisory lab focused on unit economics, margin resilience, and economic guardrails for AI features." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <div class="badge">Inferonomics</div>
+      <h1>AI Economics Advisory Lab</h1>
+      <p class="sub">
+        A practical framework and modeling lab to evaluate <strong>unit economics</strong>, <strong>margin resilience</strong>,
+        and <strong>cost drivers</strong> of AI features before they ship.
+      </p>
+
+      <div class="cta">
+        <a class="btn" href="mailto:YOUR_EMAIL_HERE?subject=Inferonomics%20—%20Executive%20Brief%20Request">Request an Executive Brief</a>
+        <a class="btn secondary" href="#what">What is Inferonomics?</a>
+      </div>
+
+      <p class="disclaimer">
+        Built independently as personal research. No confidential or employer data is used.
+      </p>
+    </header>
+
+    <section id="what" class="card">
+      <h2>What it helps leaders answer</h2>
+      <ul>
+        <li>What is our <strong>cost per effective request</strong> and what drives it (input/output/overhead)?</li>
+        <li>What’s the <strong>break-even revenue per user</strong> and required cache rate to stay profitable?</li>
+        <li>How do architecture choices (RAG depth, compression, token caps) impact margin?</li>
+        <li>What are the fastest levers to restore margin when usage grows?</li>
+      </ul>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h3>Executive Brief (1-page)</h3>
+        <p>
+          A concise summary of risk level, break-even targets, dominant cost drivers, and recommended actions—
+          suitable for CTO/CFO alignment.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Unit Economics Modeling</h3>
+        <p>
+          Scenario-based modeling for MAU growth, requests/user, token budgets, caching, and pricing assumptions.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Optimization Levers</h3>
+        <p>
+          Practical levers such as retrieval depth, history compression, input/output caps, and caching strategy.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>
+        <strong>Inferonomics</strong>
+        <span class="muted">— AI economics, margin as a first-class architectural constraint.</span>
+      </div>
+      <div class="muted">
+        © <span id="y"></span> • <a href="mailto:YOUR_EMAIL_HERE">Contact</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
