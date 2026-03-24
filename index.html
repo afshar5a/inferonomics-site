@@ -1,160 +1,229 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Inferonomics — AI Economics Research Lab</title>
-  <meta name="description" content="Inferonomics is an independent AI Economics Research Lab exploring unit economics, margin resilience, and cost-aware architectural design for AI systems." />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inferonomics — Decision Support for AI System Economics</title>
+  <meta
+    name="description"
+    content="Inferonomics helps technical leaders model the economic consequences of AI architecture choices before scaling."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-  <main class="wrap">
-
-    <!-- HERO -->
-    <header class="hero">
-      <div class="badge">Inferonomics</div>
-      <h1>AI Economics Research Lab</h1>
-
-      <p class="sub">
-        Making AI costs visible. Making architecture accountable.
-      </p>
-
-      <p class="sub">
-        A practical research framework to evaluate 
-        <strong>unit economics</strong>, 
-        <strong>margin resilience</strong>, 
-        and <strong>cost drivers</strong> of AI systems before they scale.
-      </p>
-
-      <div class="cta">
-        <a class="btn" href="mailto:afshar.sanam@gmail.com?subject=Inferonomics%20—%20Research%20Inquiry">
-          Connect about AI economics research
-        </a>
-        <a class="btn secondary" href="#what">
-          Explore the framework
-        </a>
-        <a class="btn secondary" href="#live-app">
-          Open the live model
-        </a>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">
+        <span class="brand-mark">AS</span>
+        <div class="brand-copy">
+          <div class="brand-name">Inferonomics</div>
+          <div class="brand-sub">Independent AI Economics Lab</div>
+        </div>
       </div>
+      <nav class="nav-links">
+        <a href="#what-it-does">What it does</a>
+        <a href="#simulator">Decision Simulator</a>
+        <a href="#difference">Why it’s different</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
 
-      <p class="disclaimer">
-        Built independently as personal research and experimentation. 
-        Developed outside professional responsibilities. 
-        No confidential or employer data is used.
-      </p>
-    </header>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Decision support for AI system economics</p>
+          <h1>Model the economic consequences of AI architecture choices before you scale.</h1>
+          <p class="hero-text">
+            Inferonomics helps technical leaders evaluate AI systems through unit economics,
+            margin sensitivity, and break-even analysis — so architecture decisions are grounded
+            in financial reality, not intuition.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#simulator">Open the Decision Simulator</a>
+            <a class="btn btn-secondary" href="#example">See an example analysis</a>
+          </div>
+        </div>
 
-    <!-- EMBEDDED APP -->
-    <section id="live-app" class="card" style="margin-top: 28px;">
-      <h2>Interactive Inferonomics Model</h2>
-      <p>
-        Use the live dashboard below to simulate inference cost, unit economics,
-        and margin impact under different usage assumptions.
-      </p>
-
-      <div class="app-embed">
-        <iframe
-          src="https://inferonomics.streamlit.app/?embed=true"
-          title="Inferonomics Streamlit App"
-          loading="lazy"
-          allow="clipboard-write; clipboard-read; fullscreen"
-          referrerpolicy="strict-origin-when-cross-origin">
-        </iframe>
+        <aside class="hero-card">
+          <p class="card-label">Who it’s for</p>
+          <ul>
+            <li>CTOs and technical leaders evaluating AI systems at scale</li>
+            <li>Platform and product teams making architecture tradeoffs</li>
+            <li>Researchers and practitioners thinking structurally about AI economics</li>
+          </ul>
+        </aside>
       </div>
     </section>
 
-    <!-- WHAT SECTION -->
-    <section id="what" class="card">
-      <h2>What leaders can evaluate</h2>
-      <ul>
-        <li>What is the <strong>cost per effective request</strong> and what drives it (input/output/overhead)?</li>
-        <li>What is the <strong>break-even revenue per user</strong> required for sustainability?</li>
-        <li>How do architectural decisions (RAG depth, compression, token caps) impact margin?</li>
-        <li>What economic risks emerge as usage scales?</li>
-        <li>Which optimization levers restore margin fastest under growth pressure?</li>
-      </ul>
+    <section id="what-it-does" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">What Inferonomics helps you decide</p>
+          <h2>Move from cost visibility to architecture decisions.</h2>
+          <p>
+            Most AI cost tools tell you what you already spent. Inferonomics is designed to help
+            you understand what your architecture choices are likely to cost before you commit to
+            them.
+          </p>
+        </div>
+
+        <div class="cards three-up">
+          <article class="card">
+            <h3>Compare architectures</h3>
+            <p>
+              Evaluate different AI system designs under the same demand assumptions and see how
+              cost structure, retrieval strategy, and model choice affect viability.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Stress-test margins</h3>
+            <p>
+              Model how margins change as usage volume rises, prompts grow, retrieval depth
+              increases, or cache performance deteriorates.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Find the break-even point</h3>
+            <p>
+              Identify when a workflow becomes sustainable, what moves the threshold, and which
+              optimization levers matter most.
+            </p>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- GRID -->
-    <section class="grid">
-      <div class="card">
-        <h3>Research Summary (1-page)</h3>
+    <section id="example" class="section alt">
+      <div class="container example-grid">
+        <div>
+          <p class="eyebrow">Example analysis</p>
+          <h2>What happens when you add RAG to a support workflow?</h2>
+          <p>
+            A team is deciding whether to add retrieval to improve answer quality. Inferonomics
+            helps model how deeper retrieval affects cost per usable output, margin resilience,
+            and the break-even point as volume grows.
+          </p>
+        </div>
+        <div class="example-box">
+          <h3>Questions the model can answer</h3>
+          <ul>
+            <li>Should we use RAG here, or does it destroy margins?</li>
+            <li>How sensitive is this workflow to retrieval depth?</li>
+            <li>Does caching materially improve viability?</li>
+            <li>Which lever matters most: routing, compression, or caching?</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="simulator" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Decision Simulator</p>
+          <h2>Test scenarios before they become operating costs.</h2>
+          <p>
+            Use the live model to compare architectures, stress-test margin assumptions, and see
+            how demand, complexity, and optimization choices affect economic viability.
+          </p>
+        </div>
+
+        <div class="simulator-shell">
+          <div class="simulator-meta">
+            <div class="meta-card">
+              <h3>Compare</h3>
+              <p>Compare two architectures under the same demand and pricing assumptions.</p>
+            </div>
+            <div class="meta-card">
+              <h3>Stress-test</h3>
+              <p>See how margins move under higher usage, longer prompts, or deeper retrieval.</p>
+            </div>
+            <div class="meta-card">
+              <h3>Decide</h3>
+              <p>Identify break-even thresholds and the cost levers that matter most.</p>
+            </div>
+          </div>
+
+          <div class="iframe-wrap">
+            <iframe
+              src="https://inferonomics.streamlit.app/?embed=true"
+              title="Inferonomics Decision Simulator"
+              loading="lazy"
+              allow="fullscreen"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="difference" class="section alt">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Why it’s different</p>
+          <h2>Not another AI cost dashboard.</h2>
+        </div>
+
+        <div class="cards three-up">
+          <article class="card">
+            <h3>Upstream, not post-hoc</h3>
+            <p>
+              Inferonomics focuses on decisions before scale, not only reporting after spend has
+              already happened.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Built for tradeoffs</h3>
+            <p>
+              It is designed to evaluate architecture choices — not just monitor requests, trace
+              latency, or attribute cloud bills.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Economic viability first</h3>
+            <p>
+              The goal is not just efficiency. It is understanding whether an AI system remains
+              sustainable as usage, complexity, and scale change.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container narrow">
+        <p class="eyebrow">About Inferonomics</p>
+        <h2>An independent research and modeling project.</h2>
         <p>
-          A concise economic risk overview outlining cost structure, break-even thresholds, 
-          dominant drivers, and architectural tradeoffs.
+          Inferonomics is focused on the economics of AI systems — especially how architecture
+          decisions shape cost, margin resilience, and long-term viability. It is built as an
+          independent decision-support project for technically minded practitioners.
         </p>
       </div>
-
-      <div class="card">
-        <h3>Unit Economics Modeling</h3>
-        <p>
-          Scenario-based simulations across MAU growth, requests per user, 
-          token budgets, caching rates, and pricing assumptions.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Optimization Levers</h3>
-        <p>
-          Structured evaluation of retrieval depth, history compression, 
-          token caps, caching strategy, and overhead reduction.
-        </p>
-      </div>
     </section>
-
-    <!-- ABOUT INFERONOMICS -->
-    <section class="card" style="margin-top: 28px;">
-      <h2>About Inferonomics</h2>
-      <p>
-        Inferonomics is an independent AI Economics Research Lab examining how 
-        architectural decisions influence cost structure, margin resilience, 
-        and long-term sustainability in AI systems.
-      </p>
-      <p>
-        The research treats economic viability as a first-class architectural constraint —
-        ensuring AI capability is matched with structural financial durability.
-      </p>
-    </section>
-
-    <!-- ABOUT FOUNDER -->
-    <section class="card" style="margin-top: 18px;">
-      <h2>About the Founder</h2>
-      <p>
-        Inferonomics was founded by <strong>Afshar Sanam</strong>, a technologist 
-        exploring the intersection of AI systems architecture, economic design, 
-        and financial modeling.
-      </p>
-      <p>
-        Her work focuses on how design decisions shape cost structure, 
-        margin behavior, and long-term system sustainability.
-      </p>
-      <p>
-        This research initiative is developed independently and outside professional 
-        responsibilities. No confidential or employer information is used.
-      </p>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div>
-        <strong>Inferonomics</strong>
-        <span class="muted">
-          — AI economics, margin as a first-class architectural constraint.
-        </span>
-      </div>
-      <div class="muted">
-        © <span id="y"></span> • Inferonomics Research Lab • Independent initiative • 
-        <a href="mailto:afshar.sanam@gmail.com">Contact</a>
-      </div>
-    </footer>
-
   </main>
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
-
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div>
+        <strong>Inferonomics</strong>
+        <p>Decision support for AI system economics.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#simulator">Open the simulator</a>
+        <a href="mailto:contact@inferonomics.org">contact@inferonomics.org</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
