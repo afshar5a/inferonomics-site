@@ -148,3 +148,22 @@ h1{
   .grid{ grid-template-columns: 1fr; }
   .footer{ flex-direction: column; }
 }
+
+/* EMBEDDED APP */
+.app-embed{
+  margin-top: 18px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.03);
+  box-shadow: 0 8px 24px rgba(0,0,0,.22);
+}
+
+.app-embed iframe{
+  display: block;
+  width: 100%;
+  min-height: 900px;
+  border: 0;
+  background: #0b0f19;
+}
