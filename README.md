@@ -1,43 +1,48 @@
-# Inferonomics site
+# Inferonomics — Web Experience
 
-This repository is a standard **Vite + React + Tailwind** static site configured for **GitHub Pages deployment with a custom domain**.
+**Created by:** Afshar Sanam  
+**Project:** Inferonomics — AI Systems Economics
 
-## What is included
+This repository contains the public web experience for **Inferonomics**, an independent research initiative exploring the economics of AI system architecture.
 
-- Standard Vite/React/Tailwind codebase
-- GitHub Pages workflow at `.github/workflows/deploy.yml`
-- `.nojekyll` marker for static hosting
-- Simple `404.html` redirect to `/`
-- `GITHUB_PAGES_SETUP.md` with exact GitHub and DNS steps
+The site presents frameworks and decision-support concepts for reasoning about:
 
-## Local development
+- inference cost
+- margin sensitivity
+- break-even thresholds
+- caching economics
+- retrieval and orchestration cost
+- architecture trade-offs at scale
+
+## About Inferonomics
+
+Inferonomics examines the economic consequences of AI architecture choices before systems are scaled. The central idea is that cost and margin are not only financial outcomes; they are also shaped by architecture.
+
+## Tech Stack
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+
+## Local Development
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Production build
+## Production Build
 
 ```bash
 npm run build
 npm run preview
 ```
 
-## Publish on GitHub Pages
+## Deployment
 
-1. Push this repo to GitHub
-2. In **Settings → Pages**, set **Source** to **GitHub Actions**
-3. Add your domain in **Settings → Pages → Custom domain**
-4. Update DNS with your registrar
-5. Wait for the workflow to deploy
-6. Enable **Enforce HTTPS** when GitHub makes it available
+The site is configured for deployment through GitHub Pages with a custom domain.
 
-See `GITHUB_PAGES_SETUP.md` for the exact values.
+## Independence
 
-## Before launch
-
-- Update metadata in `index.html`
-- Update contact details in `src/components/Footer.tsx`
-- Update your simulator/embed section in `src/components/SimulatorSection.tsx`
-- Replace any placeholder domain values with your real domain
+This project was created as independent research and experimentation outside my professional responsibilities. No confidential or employer data is used.
