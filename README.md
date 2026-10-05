@@ -1,48 +1,43 @@
-# Inferonomics — Web Experience
+# Inferonomics site
 
-**Created by:** Afshar Sanam  
-**Project:** Inferonomics — AI Systems Economics
+This repository is a standard **Vite + React + Tailwind** static site configured for **GitHub Pages deployment with a custom domain**.
 
-This repository contains the public web experience for **Inferonomics**, an independent research initiative exploring the economics of AI system architecture.
+## What is included
 
-The site presents frameworks and decision-support concepts for reasoning about:
+- Standard Vite/React/Tailwind codebase
+- GitHub Pages workflow at `.github/workflows/deploy.yml`
+- `.nojekyll` marker for static hosting
+- Simple `404.html` redirect to `/`
+- `GITHUB_PAGES_SETUP.md` with exact GitHub and DNS steps
 
-- inference cost
-- margin sensitivity
-- break-even thresholds
-- caching economics
-- retrieval and orchestration cost
-- architecture trade-offs at scale
-
-## About Inferonomics
-
-Inferonomics examines the economic consequences of AI architecture choices before systems are scaled. The central idea is that cost and margin are not only financial outcomes; they are also shaped by architecture.
-
-## Tech Stack
-
-- React
-- TypeScript
-- Vite
-- Tailwind CSS
-
-## Local Development
+## Local development
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Production Build
+## Production build
 
 ```bash
 npm run build
 npm run preview
 ```
 
-## Deployment
+## Publish on GitHub Pages
 
-The site is configured for deployment through GitHub Pages with a custom domain.
+1. Push this repo to GitHub
+2. In **Settings → Pages**, set **Source** to **GitHub Actions**
+3. Add your domain in **Settings → Pages → Custom domain**
+4. Update DNS with your registrar
+5. Wait for the workflow to deploy
+6. Enable **Enforce HTTPS** when GitHub makes it available
 
-## Independence
+See `GITHUB_PAGES_SETUP.md` for the exact values.
 
-This project was created as independent research and experimentation outside my professional responsibilities. No confidential or employer data is used.
+## Before launch
+
+- Update metadata in `index.html`
+- Update contact details in `src/components/Footer.tsx`
+- Update your simulator/embed section in `src/components/SimulatorSection.tsx`
+- Replace any placeholder domain values with your real domain
